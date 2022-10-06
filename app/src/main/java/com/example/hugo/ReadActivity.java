@@ -16,8 +16,6 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import org.json.JSONObject;
 
-import java.util.List;
-
 public class ReadActivity extends AppCompatActivity {
 
     public EditText edit;
@@ -39,16 +37,15 @@ public class ReadActivity extends AppCompatActivity {
     public double scoreOfSite;
     public double result = 0;
 
-    List<Question> allQuestions = Question.Companion.getQuestions();
 
-    ListOfWebsites websites = new ListOfWebsites();
+    ListOfWebsites websites;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_read);
 
-
+        websites = new ListOfWebsites(getAssets());
 
         // Question number one:
         edit = (EditText) findViewById (R.id.edit_text_example);
@@ -340,7 +337,7 @@ public class ReadActivity extends AppCompatActivity {
                             @Override
                             public void run() {
                                 Intent i = new Intent(ReadActivity.this, ResultActivityRead.class);
-                                i.putExtra("Final Score", result);
+                                i.putExtra(ResultActivityRead.SCORE, result);
                                 startActivity(i);
                                 analyzeButton.setText("Zisti výsledky");
                             }

@@ -7,6 +7,8 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class ResultActivityRead extends AppCompatActivity {
+    static final String SCORE = "SCORE";
+
     double finalScore = 0.0;
 
     @Override
@@ -16,7 +18,7 @@ public class ResultActivityRead extends AppCompatActivity {
 
         Bundle extras = getIntent().getExtras();
         if(extras != null) {
-            finalScore = extras.getDouble("Final Score");
+            finalScore = extras.getDouble(SCORE);
         }
         int percentage = (int) ((finalScore / 30) * 100);
         Toast.makeText(ResultActivityRead.this, "Skóre je: " + percentage + "%", Toast.LENGTH_SHORT).show();

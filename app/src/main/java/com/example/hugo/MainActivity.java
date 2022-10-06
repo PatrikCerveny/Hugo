@@ -1,15 +1,11 @@
 package com.example.hugo;
 
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.lifecycle.ViewModel;
-
 import android.content.Intent;
 import android.os.Bundle;
-import android.os.Handler;
 import android.view.View;
-import android.view.ViewTreeObserver;
 import android.widget.Button;
-import android.window.SplashScreen;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
@@ -20,7 +16,6 @@ public class MainActivity extends AppCompatActivity {
         setTheme(R.style.Theme_Hugo);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
 
         FloatingActionButton fab = findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
@@ -34,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
         readButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(MainActivity.this, ReadActivity.class));
+                startActivity(new Intent(MainActivity.this, QuestionsActivity.class));
             }
         });
 
