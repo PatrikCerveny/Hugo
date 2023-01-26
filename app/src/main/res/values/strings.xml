@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name">Hugo</string>
-    <string name="read_button_text">Čítal som niečo</string>
+    <string name="findOut_button_text">Over si informáciu</string>
     <string name="saw_button_text">Videl som niečo</string>
     <string name="fab_desc">more information</string>
     <string name="app_info_text">Hugo je nadizajnovaný tak aby Ti pomohol zorientovať sa v spletitom a neprehľadom svete informácií!</string>
@@ -55,11 +55,12 @@
     <string name="question_tem_text">Zadaj kľúčové slová alebo výrok:</string>
     <string name="key_words_hint">vírus, usa, laboratórium, pandémia</string>
     <string name="btn_read_analyze"> Zistiť  výsledky</string>
-    <string name="dummy_button">Dummy Button</string>
-    <string name="dummy_content">DUMMY\nCONTENT</string>
     <string name="result_header_text">Výsledok analýzy Tvojich parametrov</string>
     <string name="result_desc_text">Po dôkladnej analýze Hugo vypočítal do akej miery je pravdepodobné, že to čo si čítal je dezinformácia.</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="back_bttn_text">Späť</string>
+    <string name="next_bttn_next">Next</string>
+    <string name="question_img_desc">image related to the question</string>
+    <string name="results_btn_text">Zisti viac</string>
 
 </resources>

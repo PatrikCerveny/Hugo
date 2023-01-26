@@ -22,22 +22,16 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(MainActivity.this, InfoActivity.class));
+                overridePendingTransition(R.anim.animation_enter, R.anim.animation_leave_out);
             }
         });
 
-        Button readButton = findViewById(R.id.read_button);
+        Button readButton = findViewById(R.id.findOut_button);
         readButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(MainActivity.this, QuestionsActivity.class));
-            }
-        });
-
-        Button sawButton = findViewById(R.id.saw_button);
-        sawButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                startActivity(new Intent(MainActivity.this, SawActivity.class));
+                startActivity(new Intent(MainActivity.this, QuestionActivity.class));
+                overridePendingTransition(R.anim.animation_enter, R.anim.animation_leave_out);
             }
         });
     }

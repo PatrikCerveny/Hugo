@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:elevation="5dp"
     android:background="@color/grey">
 
     <TextView
@@ -11,7 +11,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="60dp"
-        android:layout_marginTop="140dp"
+        android:layout_marginTop="80dp"
         android:layout_marginEnd="60dp"
         android:fontFamily="sans-serif-medium"
         android:text="@string/result_header_text"
@@ -39,24 +39,23 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/result_header" />
 
+
     <TextView
         android:id="@+id/result_percentage"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="60dp"
-        android:layout_marginTop="8dp"
         android:layout_marginEnd="60dp"
         android:layout_marginBottom="100dp"
         android:fontFamily="sans-serif-medium"
         android:textColor="@color/pink_700"
-        android:textSize="130sp"
+        android:textSize="140sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/result_explanation_text"
-        app:layout_constraintVertical_bias="0.163" />
-
+        app:layout_constraintVertical_bias="0.089" />
 
     <TextView
         android:id="@+id/result_percentage_text"
@@ -67,10 +66,28 @@
         android:fontFamily="sans-serif-light"
         android:textAlignment="center"
         android:textColor="@color/dark"
-        android:textSize="12sp"
+        android:textSize="15sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/result_percentage" />
 
+    <Button
+        android:id="@+id/results_btn"
+        style="@style/Widget.Material3.Button.ElevatedButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginEnd="100dp"
+        android:layout_weight="1"
+        android:backgroundTint="@color/dark"
+        android:fontFamily="sans-serif-light"
+        android:padding="20dp"
+        android:text="@string/results_btn_text"
+        android:textColor="@color/grey"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/result_percentage_text" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -11,12 +11,10 @@ import java.util.HashMap;
 
 public class ListOfWebsites {
     private HashMap<String, Double> list;
-    private AssetManager assetManager;
+    private final AssetManager assetManager;
 
     public ListOfWebsites(AssetManager assetManager) {
         this.assetManager = assetManager;
-
-//        this.list = new HashMap<>();
         loadValues("zoznam.txt");
     }
 
@@ -24,11 +22,11 @@ public class ListOfWebsites {
         String site = siteToSearch.toLowerCase();
 
         if (siteToSearch.startsWith("www.")) {
-            site = siteToSearch.substring(3);
+            site = siteToSearch.substring(4);
         }
 
         if (this.list.get(site) == null) {
-            return 1.0;
+            return 5.0;
         } else {
             return this.list.get(site);
         }
