@@ -23,7 +23,7 @@ import kotlinx.parcelize.Parcelize
                 ),
                 Result(
                     "Dezinformácia",
-                    "Tvoja informácia je pravdepodobne dezinformáciouasd adas",
+                    "Tvoja informácia je pravdepodobne dezinformáciou",
                     "Dezinformácia je viac alebo menej zámerne vytvorená skreslená alebo chybná informácia – chce mýliť, zavádzať adresáta. Dezinformácia vedie k nesprávnym záverom alebo rozhodnutiam. " +
                             "Je to chybná správa alebo posolstvo inkorporované do určitého informačného systému, spravidla s cieľom zmeniť ho a dosiahnuť inhibíciu/excitáciu zvolených mienkotvorných tém v populačnom prostredí. " +
                             "Môže to byť aj úmyselne nesprávna či skreslená informácia tajne implantovaná do informačnej sústavy oponenta so zámerom ovplyvniť potrebným smerom jeho aktivity (názory). " +
