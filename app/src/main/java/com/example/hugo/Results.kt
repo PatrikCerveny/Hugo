@@ -9,7 +9,7 @@ import kotlinx.parcelize.Parcelize
             val results = listOf(
                 Result(
                     "Hoax",
-                    "Tvoja informácia je pravdepodobne Hoax",
+                    "Tvoja informácia je pravdepodobne Hoaxer",
                     "Čo je to Hoax? Hoax v preklade z anglického slova znamená podvod, vtip (výslovnosť termínu hoax je hōks). " +
                             "Označuje poplašnú alebo nezmyselnú správu, ktorá je masovo šírená najmä prostredníctvom internetu. Hoaxy sú najčastejšie preposielané formou emailu" +
                             " alebo zdieľaním na sociálnych sieťach. Bývajú jednoduché a obsahujú výzvu na šírenie. Odborníci sa zhodujú, že ak dostaneme takýto e-mail (prípadne iný typ správy), " +
